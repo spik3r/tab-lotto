@@ -1,0 +1,150 @@
+.powerball-container {
+    margin: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    flex-direction: row;
+    width: 500px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    color: purple;
+    border: 1px solid black;
+    margin: -1px 0 0 -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.lotto-num {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin: 2px 2px 2px 2px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pb {
+    font-weight: bold;
+}
+.filled-pb {
+    background-color: grey;
+    color: white;
+}
+
+.filled {
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+}
+
+.selected {
+    color: darkmagenta;
+    font-weight: bold;
+    background: lavender;
+}
+.img {
+    opacity: 0.3;
+    background-size: 32px 32px;
+}
+
+.cross {
+    position: relative;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cross::before,
+.cross::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: gray;
+    opacity: 0.3;
+}
+
+.cross::before {
+    transform: rotate(45deg);
+}
+
+.cross::after {
+    transform: rotate(-45deg);
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    margin-left: 16px;
+    width: 64px;
+    justify-content: center;
+    display: flex;
+}
+.actions {
+    width: 84px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.select-pb-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: grey;
+    padding:  4px 0;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin: 2px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+}
+
+.fill {
+    background-color: mediumpurple;
+}
+
+.delete {
+    background-color: grey;
+}
+
+.App {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
